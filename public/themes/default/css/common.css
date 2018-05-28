@@ -1,0 +1,144 @@
+body {
+ 	overflow-x: hidden;
+	margin-top: -16px;
+}
+div.container {
+    max-width: 1200px !important;
+}
+nav {
+	background: #242F39;
+	width: 100%;
+	height:40px;
+	padding: 0px;
+	margin: 0px;
+	transition: 0.5s;
+}
+
+nav .menu li{
+	list-style-type:none;
+	float:left;
+	padding: 6px 0;
+
+}
+nav .menu li a {
+
+	color:#fff;
+	padding: 0 30px;
+	font-size:18px;
+	font-weight: 600;
+}
+nav .menu li a.user:before { font-family: FontAwesome; content: '\f2bd'; }
+nav .menu li a.login:before { font-family: FontAwesome; content: '\f3f6'; }
+ul { padding: 0; }
+.mb-menu .menu-bar { padding-left: 10px; }
+.menu-bar { cursor: pointer; }
+.menu-bar i { font-size: 28px; margin-top: 23px; }
+.menubar-right { margin-left: 8px; }
+nav .mb-menu { display: none;  overflow-x: hidden; }
+/* nav .mb-menu .drop-menu { display: none; } */
+.navigation-menu { position: fixed; top: 0; left: 0;background: #66B2FF; width: 80%; height: 100%; margin-left: -80%; transition: 0.5s }
+.navigation-menu ul { padding: 10px 5px 0 5px; }
+.navigation-menu ul li { list-style: none; padding: 8px 0 10px 10px; border-bottom: 1px solid #fff; }
+.navigation-menu ul a { font-size: 16px; color: #fff; }
+@media screen and (max-width: 767px){
+	nav .mb-menu { display: block; }
+	nav .menus { display: none; }
+	.menu-open { margin-left: 0% !important;   transition: 0.5s; }
+	.body-right { position: fixed; width: 100%; right: 0; margin-right: -80%; transition: 0.5s; }
+
+}
+@media screen and (min-width: 1200px) {
+	.container { max-width: 80%; }
+}
+.page { margin-top: 20px; }
+/* slider */
+.mslider { position: relative;}
+.mslider { width: 100%; height: 300px; background: red; }
+.mslider .controller { position: absolute; top: 100px; cursor: pointer; }
+.mslider .controller.left-control  , .mslider .controller.right-control  { color: #fff; font-size: 50px; padding: 0 10px; }
+.mslider .controller.left-control { left: 0; }
+.mslider .controller.right-control { right: 0; }
+.mslider .slider-inner { height: 100%; width: 100%; }
+.mslider .slider-inner .item { height: 100%; width: 100%; display: none; transition:2s; }
+.mslider .slider-inner .item.active { display: block; transition: 2s;}
+/* slider */
+
+.main {
+	float: left;
+	width: 80%;
+ }
+/* login form */
+.login-form {
+	width: 100%;
+	align-items: center;
+	margin-top: 200px;
+}
+.login-form form {
+	margin: auto;
+	width: 400px;
+	padding: 50px 25px;
+	box-shadow: 0 0px 20px rgba(0,0,0,0.19),
+	0 6px 6px rgba(0,0,0,0.23);
+}
+.login-form form .title {
+ 	font-weight: bold;
+ 	font-size: 22px;
+ 	margin-bottom: 30px;
+}
+.login-form form input {
+	padding-left: 20px;
+}
+.login-form form .inf {
+	font-size: 14px;
+	margin-bottom: 30px;
+	color: #a0a0a0;
+}
+.login-form form .inf span.forget {
+	color: #007bff;
+}
+.login-form form .register-btn { color: #fff; margin-top: 15px; }
+
+/* forum layout */
+
+.topic {
+	padding: 6px 10px;
+	font-size: 14px;
+	color: #fff;
+	background: #2E3740;
+
+}
+
+.forum-discussion .title {
+
+/*	padding: 10px 10px; */
+	font-size: 16px;
+	color: #00cc00;
+	font-weight: normal;
+}
+.forum-discussion .text {
+	color : #a0a0a0;
+	font-size: 12px;
+}
+table {
+	width: 100%;
+}
+table tr th:first-child {
+	width: 60%;
+}
+table thead tr {
+	background: #242F39;
+}
+table thead tr th{
+	padding: 5px 10px;
+
+	color: #fff;
+}
+table tbody tr td {
+	padding: 5px 10px;
+}
+table tbody tr {
+	background: #2E3740;
+}
+table tbody tr:nth-child(even){
+	background: #242F39;
+}
