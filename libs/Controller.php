@@ -18,7 +18,8 @@ class Controller {
 
 	public function loadTheme($theme_name) {
 	   	$this->theme_name = $theme_name;
-			$this->view->theme_name = $this->theme_name;
+		  $this->view->theme_name = $this->theme_name;
+
 	}
 
 }

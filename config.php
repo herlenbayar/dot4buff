@@ -31,4 +31,7 @@ define('EDITOR_THUMB_PATH', '/public/editor_thumbs/');
 //video path
 define('VIDEO_PATH', '/public/videos/');
 
+// theme folder
+define('THEME', 'themes/');
+
 //mail server path

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Bootstrap {
 	function __construct() {
@@ -6,14 +6,14 @@ class Bootstrap {
 		$url = rtrim($url, '/');
 		$url = explode('/', $url);
 		//print_r($url);
-		
+
 		if(empty($url[0])){
-			require 'controllers/index.php';
+			require 'controllers/main.php';
 			$controller = new Index();
 			$controller->index();
 			return false;
 		}
-		
+
 		$file = 'controllers/' .$url[0]. '.php';
 		if(file_exists($file)){
 			require $file;
@@ -24,21 +24,22 @@ class Bootstrap {
 		}
 		 $controller = new $url[0];
 		 $controller->loadModel($url[0]);
-		
+
 		if(isset($url[2])) {
 			if(method_exists($controller, $url[1])){
 				$controller->{$url[1]}($url[2]);
 			} else {
 				echo 'errooor';
 			}
-			
+
 		} else {
 			if(isset($url[1])){
-				$controller->{$url[1]}();
+			//	$controller->{$url[1]}();
+					echo "string";
 			} else {
 				$controller->index();
 			}
-				
+
 		}
 
 	}
