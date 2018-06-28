@@ -8,7 +8,7 @@
 	define('DB_USER', 'root');
 	define('DB_PASS', '');
 
-define('URL', 'http://localhost/');
+define('URL', 'http://localhost/dot4buff/');
 
 // lib
 define('LIBS', 'libs/');
@@ -30,5 +30,8 @@ define('EDITOR_THUMB_PATH', '/public/editor_thumbs/');
 
 //video path
 define('VIDEO_PATH', '/public/videos/');
+
+//theme pathinfo
+define('THEMES', 'themes/');
 
 //mail server path

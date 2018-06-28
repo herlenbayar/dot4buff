@@ -8,9 +8,9 @@ class View {
 			require 'views/' .$name. '.php';
 		}
 		else {
-			require 'views/'.$theme_name.'header.php';
-			require 'views/'.$theme_name.$name. '.php';
-			require 'views/'.$theme_name.'footer.php';
+			require 'views/themes/'.$theme_name.'/header.php';
+			require 'views/themes/'.$theme_name.'/'.$name. '.php';
+			require 'views/themes/'.$theme_name.'/footer.php';
 		}
 	}
 	public function render_admin($name, $noInclude = false) {
